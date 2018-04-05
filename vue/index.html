@@ -15,6 +15,7 @@
   </h2>
 
   <h2 class="subtitle">今日は {{ today }}です。</h2>
+  <p>{{ message }}</p>
 
   <div align="center">nippo All rights reserved.</div>
 </div>
@@ -22,7 +23,8 @@
 new Vue({
   el: '#app',
   data: {
-    today: ''
+    today: '',
+    message: 'こんにちは！'
   },
   created: function() {
     this.today = this.getNow();
